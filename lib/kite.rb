@@ -1,6 +1,4 @@
-require "kite/version"
+require 'kite/version'
 
-module Kite
-  class Error < StandardError; end
-  # Your code goes here...
-end
+# Add requires for other files you add to your project here, so
+# you just need to require this one file in your bin file

@@ -1,0 +1,63 @@
+== kite - Describe your application here
+
+v0.0.1
+
+=== Global Options
+=== -f|--flagname The name of the argument
+
+Describe some flag here
+
+[Default Value] the default
+
+
+=== --help
+Show this message
+
+
+
+=== -s|--[no-]switch
+Describe some switch here
+
+
+
+=== --version
+Display the program version
+
+
+
+=== Commands
+==== Command: <tt>help  command</tt>
+Shows a list of commands or help for one command
+
+Gets help for the application or its commands. Can also list the commands in a way helpful to creating a bash-style completion function
+===== Options
+===== -c
+List commands one per line, to assist with shell completion
+
+
+
+==== Command: <tt>init  Describe arguments to init here</tt>
+Describe init here
+
+
+===== Options
+===== -f arg
+
+Describe a flag to init
+
+[Default Value] default
+
+
+===== -s
+Describe a switch to init
+
+
+
+==== Command: <tt>module  Describe arguments to module here</tt>
+Describe module here
+
+
+==== Command: <tt>version  Describe arguments to version here</tt>
+Describe version here
+
+

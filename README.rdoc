@@ -1,0 +1,6 @@
+= kite
+
+Describe your project here
+
+:include:kite.rdoc
+
