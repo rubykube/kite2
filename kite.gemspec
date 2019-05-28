@@ -39,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rdoc", "~> 6.1"
   spec.add_development_dependency "aruba", "~> 0.14"
+  spec.add_development_dependency "pry", "~> 0.12.2"
 end
