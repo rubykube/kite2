@@ -5,7 +5,7 @@ require 'gli'
 begin 
 
   require 'kite'
-  require 'kite/command/root'
+  require 'kite/app'
 
 rescue LoadError
   # FIX: Remove this begin/rescue before distributing your app
@@ -15,4 +15,4 @@ rescue LoadError
   exit 64
 end
 
-exit Kite::Command::Root.run(ARGV)
+exit Kite::App.run(ARGV)

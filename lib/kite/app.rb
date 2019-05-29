@@ -1,5 +1,5 @@
-module Kite::Command
-  class Root
+module Kite
+  class App
     extend GLI::App
 
     program_desc 'Describe your application here'
