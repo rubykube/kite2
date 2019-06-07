@@ -4,6 +4,13 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
+## TODO
+
+1. Split the root command into separate files.
+2. Find a way to extend Kite with plugins either by loading custom commands or extending the module
+3. Create an example git wrapper(kite-git)
+4. Integrate the git wrapper inside the plugin
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,6 +26,16 @@ And then execute:
 Or install it yourself as:
 
     $ gem install kite
+
+## Concepts
+
+Kite ecosystem consists of three main elements: the Kite CLI itself, plugins and Kite.
+
+The **CLI** is responsible for being an entrypoint for loading plugins' functionality and interacting with projects.
+
+The **plugins** are responsible for extending the functionality of a Kite stack, e.g. providing a Terraform wrapper or ways of managing Compose deployments.
+
+ The **projects** are the main interaction points between the Kite CLI, plugins and the operator himself. They contain the plugins and related configurational files, allowing operators to hand-pick any plugins they'd like to use and fine-tune them to the project needs. 
 
 ## Usage
 
