@@ -2,11 +2,9 @@
 
 require 'gli'
 
-begin 
-
+begin
   require 'kite'
   require 'kite/command/root'
-
 rescue LoadError
   # FIX: Remove this begin/rescue before distributing your app
   STDERR.puts "In development, you need to use `bundle exec bin/kite` to run your app"

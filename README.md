@@ -6,10 +6,13 @@ TODO: Delete this and the text above, and describe your gem
 
 ## TODO
 
-1. Split the root command into separate files.
-2. Find a way to extend Kite with plugins either by loading custom commands or extending the module
-3. Create an example git wrapper(kite-git)
-4. Integrate the git wrapper inside the plugin
+- [x] Split the root command into separate files
+
+- [ ] Find a way to extend Kite with plugins either by loading custom commands or extending the module
+
+- [ ] Create an example git wrapper(kite-git)
+
+- [ ] Integrate the git wrapper inside the plugin
 
 ## Installation
 

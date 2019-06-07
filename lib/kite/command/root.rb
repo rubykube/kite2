@@ -2,48 +2,14 @@ module Kite::Command
   class Root
     extend GLI::App
 
-    program_desc 'Describe your application here'
+    program_desc 'CLI for managing the Kite ecosystem for cloud deployment, development and beyond'
 
     version Kite::VERSION
 
     subcommand_option_handling :normal
     arguments :strict
 
-    desc 'Describe some switch here'
-    switch [:s,:switch]
-
-    desc 'Describe some flag here'
-    default_value 'the default'
-    arg_name 'The name of the argument'
-    flag [:f,:flagname]
-
-    desc 'Describe init here'
-    arg_name 'Describe arguments to init here'
-    command :init do |c|
-      c.desc 'Describe a switch to init'
-      c.switch :s
-
-      c.desc 'Describe a flag to init'
-      c.default_value 'default'
-      c.flag :f
-      c.action do |global_options,options,args|
-
-        # Your command logic here
-
-        # If you have any errors, just raise them
-        # raise "that command made no sense"
-
-        puts "init command ran"
-      end
-    end
-
-    desc 'Describe module here'
-    arg_name 'Describe arguments to module here'
-    command :module do |c|
-      c.action do |global_options,options,args|
-        puts "module command ran"
-      end
-    end
+    commands_from 'kite/command'
 
     pre do |global,command,options,args|
       # Pre logic here
