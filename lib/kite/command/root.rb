@@ -10,6 +10,7 @@ module Kite::Command
     arguments :strict
 
     commands_from 'kite/command'
+    commands_from 'kite/plugin'
 
     pre do |global,command,options,args|
       # Pre logic here
